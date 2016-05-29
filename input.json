@@ -1,0 +1,37 @@
+{"add":
+			{  "Accept-Ranges": "gzip, deflate",
+			  "Connection": "upgrade"
+			}
+		,
+		"edit": [
+			{
+				"word": "Microsoft-IIS",
+				"action": "append",
+				"target": "/6.0"
+			},
+			{
+				"word": "Content-Location",
+				"action": "replaceMatching",
+				"target": "https://",
+				"replace": "http://"
+			},
+			{
+				"word": "X-PoweredBy",
+				"action": "remove",
+				"target": null
+			},
+			{
+				"word": "X-PoweredBy",
+				"action": "remove",
+				"target": null
+			},
+			{
+				"word": "Content-Type",
+				"action": "replace",
+				"target": "image/png"
+			}
+		],
+		"delete": [ 
+			"Cache-Control", "Content-Length"
+		]
+	}
