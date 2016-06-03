@@ -13,3 +13,4 @@ Add header and value, remove header, edit header and value
 #TODO
 
 Automated task using JSON input - will do when I have some spare time on my hands.
+Clean the code, add comment lines.
